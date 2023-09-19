@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <script src="../../Common/JS/gsap.min.js" defer></script>
+    <script src="../JS/Animate/mainanimate.js" defer></script>
+    <title>Main Dashboard</title>
+</head>
+
+<body>
+    <div class="upper-page">
+        <div class="upper">
+            <div class="card-left">
+                <div class="card-upper">Balance Available</div>
+                <div class="card-lower">
+                    <div class="card-contents">20000</div>
+                </div>
+            </div>
+
+            <div class="card-right">
+                <div class="card-right-upper"></div>
+                <div class="card-right-lower"></div>
+            </div>
+
+        </div>
+        <div class="middle">Dashboard list</div>
+        <div class="lower" ondblclick="transaction()">
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+
+            <div class="dashboard-container">
+                <div class="container-upper">Firt Container</div>
+                <div class="container-lower"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-------Second Page---------->
+    <div class="below-page">
+        <!-------forms------------------>
+        <!--Selection Category-->
+        <div class="selection-category">
+            <div class="below-containers-upper">
+                <div class="container-description">Want to Pay for?</div>
+                <div class="container-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="selection-category-lower" onclick="necessityForm()">
+                <div class="data-container">
+                    <div class="data-container-upper">Necessity</div>
+                    <div class="data-container-lower">
+                        <div class="data-left">
+                            <div class="data-left-upper">
+                                <div class="left-upper-upper">Balance left :</div>
+                                <div class="left-upper-lower">No Limit Set</div>
+                            </div>
+                            <div class="data-left-middle">
+                                <div class="left-middle-upper">Month Expenses :</div>
+                                <div class="left-middle-lower">15000</div>
+                            </div>
+                            <div class="data-left-lower">
+                                <div class="left-lower-upper">Variability :</div>
+                                <div class="left-lower-lower">19%</div>
+                            </div>
+                        </div>
+                        <div class="data-right">
+                            <div class="data-right-upper">
+                                <div class="right-upper-upper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                <div class="right-upper-lower">Trend</div>
+                            </div>
+                            <div class="data-right-lower">
+                                <div class="right-lower-upper"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="right-lower-lower">History</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <div class="data-container-upper" onclick="wantsForm()">Wants</div>
+                    <div class="data-container-lower">
+                        <div class="data-left">
+                            <div class="data-left-upper">
+                                <div class="left-upper-upper">Balance left :</div>
+                                <div class="left-upper-lower">No Limit Set</div>
+                            </div>
+                            <div class="data-left-middle">
+                                <div class="left-middle-upper">Month Expenses :</div>
+                                <div class="left-middle-lower">15000</div>
+                            </div>
+                            <div class="data-left-lower">
+                                <div class="left-lower-upper">Variability :</div>
+                                <div class="left-lower-lower">19%</div>
+                            </div>
+                        </div>
+                        <div class="data-right">
+                            <div class="data-right-upper">
+                                <div class="right-upper-upper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                <div class="right-upper-lower">Trend</div>
+                            </div>
+                            <div class="data-right-lower">
+                                <div class="right-lower-upper"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="right-lower-lower">History</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-container">
+                    <div class="data-container-upper" onclick="othersForm()">Others</div>
+                    <div class="data-container-lower">
+                        <div class="data-left">
+                            <div class="data-left-upper">
+                                <div class="left-upper-upper">Balance left :</div>
+                                <div class="left-upper-lower">No Limit Set</div>
+                            </div>
+                            <div class="data-left-middle">
+                                <div class="left-middle-upper">Month Expenses :</div>
+                                <div class="left-middle-lower">15000</div>
+                            </div>
+                            <div class="data-left-lower">
+                                <div class="left-lower-upper">Variability :</div>
+                                <div class="left-lower-lower">19%</div>
+                            </div>
+                        </div>
+                        <div class="data-right">
+                            <div class="data-right-upper">
+                                <div class="right-upper-upper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                <div class="right-upper-lower">Trend</div>
+                            </div>
+                            <div class="data-right-lower">
+                                <div class="right-lower-upper"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="right-lower-lower">History</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Selection Category-->
+
+        <!--Income Form--->
+        <div class="income-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Income</div>
+                <div class="container-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <!--Income Form-->
+
+        <!--Expenses Form------->
+        <!-- Necessity-form -->
+        <div class="necessity-expense-form" >
+            <div class="below-containers-upper">
+                <div class="container-description">Necessity Expenses</div>
+                <div class="container-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <!-- Necessity-form -->
+
+        <!-- Wants-form -->
+        <div class="wants-expense-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Wants Expenses</div>
+                <div class="container-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <!-- Wants-form -->
+
+        <!-- Others-form -->
+        <div class="others-expense-form">
+            <div class="below-containers-upper">
+                <div class="container-description">Other Expenses</div>
+                <div class="container-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <!-- Oants-form -->
+        <!--Expenses Form------>
+
+        <!-------transaction------>
+        <div class="transactions">
+            <div class="transaction-container">
+                <div class="income-button" onclick="incomeForm()">Income</div>
+                <div class="expense-button" onclick="selectionCategory()">Expenses</div>
+            </div>
+        </div>
+        <!-------transaction------>
+        <!-------forms------------------>
+
+        <!-------Words---------->
+        <div class="below-words">Select Transactions</div>
+        <!-------Words---------->
+
+        <!-- Elements ---------->
+        <!-- Necessity Element -->
+        <div class="necessity-element">
+            <div class="necessity-data">
+                    <div class="necessity-data-upper-upper">Current Expenses</div>
+                    <div class="necessity-data-upper-lower">20000</div>
+            </div>
+            <div class="necessity-variability"></div>
+        </div>
+        <!-- Necessity Element -->
+ 
+        <!-- Elements ---------->
+
+
+
+    </div>
+    <!-------Second Page---------->
+</body>
+
+</html>

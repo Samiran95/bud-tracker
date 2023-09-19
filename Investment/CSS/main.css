@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.upper{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 90%;
+    height: 20vh;
+    background-color: blueviolet;
+    border-radius: 40px;
+}
+
+.lower{
+    width: 100%;
+    height: 71vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+/*Lower Containers*/
+
+.dashboard-container{
+    margin-top: 30px;
+    padding: 15px;
+    width: 90%;
+    height: 22vh;
+    background-color: #e0e0e0;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-container:nth-last-child(){
+    margin-bottom: 20px;
+}
+
+.container-upper{
+    width: 90%;
+    height: 4vh; /*Fixed VH size */
+    font-weight: 500;
+}
+
+.container-lower{
+    width: 100%;
+    height: 14vh;
+    border-radius: 35px;
+    background-color: purple;
+
+}
+
+
+/*Lower Containers*/
+
+/*second page*/
+
+/*FORM*/
+.below-containers{
+    width: 100%;
+    height: 30vh;
+    border-radius: 40px 40px 0px 0px;
+    box-shadow: 0px -10px 35px -15px rgba(0, 0, 0, 1);
+}
+
+.below-containers-upper{
+    width: 100%;
+    height: 7vh;/*fixed width*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-description{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container-close{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
+}
+/*FORM*/
+
+/*Heading*/
+
+.below-words{
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+
+}
+
+/*second page*/
