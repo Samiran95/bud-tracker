@@ -42,8 +42,8 @@ body{
 }
 
 .upper {
-    width: 100%;
-    height: 25vh;
+    width: 90%;
+    height: 35vh;
     display: flex;
     align-items: center;
     overflow-x: scroll;
@@ -53,63 +53,69 @@ body{
     display: none;
 }
 
-.card-left {
-    margin-left: 5vw;
-    min-width: 90%;
-    min-height: 20vh;
-    background-color: blueviolet;
-    border-radius: 40px;
+.investment-info-card{
+    min-width: 170px;
+    height: 220px;
+    margin-right: 10px;
+    background-color: #202020;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     justify-content: center;
 }
 
-.card-upper {
+.investment-card-upper{
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
     font-size: 20px;
     font-weight: 600;
 }
 
-.card-lower {
-    flex: 1;
-}
-
-.card-contents {
-    width: 180px;
-    height: 70px;
-    background-color: #ff312e;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-right {
-    margin-left: 5vw;
-    margin-right: 2vw;
-    min-height: 20vh;
+.investment-card-lower{
+    padding: 0px 20px 0px 20px ;
+    flex: 3;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+}
+
+.investment-card-lower::-webkit-scrollbar{
+    display: none;
+}
+
+.investment-container{
+    margin-bottom: 10px;
+}
+
+.investment-container-upper{
+    font-size: 15px;
+    color: white;
+}
+
+.investment-container-lower{
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
 }
 
-.card-right-upper {
-    width: 80px;
-    height: 80px;
-    background-color: #17fc54;
-    border-radius: 30px;
+
+
+.investment-lower-left{
+    margin-right: 10px;
+    color: #70ff2e;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.card-right-lower {
-    width: 80px;
-    height: 80px;
-    background-color: #17fc54;
-    border-radius: 30px;
+.investment-lower-right{
+    margin-right: 10px;
+    color: #70ff2e;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .middle {
@@ -121,7 +127,7 @@ body{
 
 .lower {
     width: 100%;
-    height: 71vh;
+    height: 61vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -425,8 +431,8 @@ body{
 }
 
 
-/* Income-form */
-.income-form {
+/* Investment-form */
+.investment-form {
     position: absolute;
     top: 105vh;
     width: 100%;
@@ -601,8 +607,6 @@ body{
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
 }
 
 .close-transaction{
@@ -634,31 +638,126 @@ body{
 
 }
 
-.income-button {
-    width: 130px;
+.shares-button {
+    width: 100px;
     height: 55px;
     margin-right: 10px;
     background-color: rgb(44, 44, 44);
-    color: #17fc54;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40px;
     font-weight: 600;
-
 }
 
-.expense-button {
-    width: 130px;
+.buy-button {
+    width: 100px;
     height: 55px;
     background-color: rgb(44, 44, 44);
-    color: #ff312e;
+    color: #64eb34;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 40px;
     font-weight: 600;
 }
+
+.sell-button {
+    width: 100px;
+    height: 55px;
+    margin-left: 15px;
+    background-color: rgb(44, 44, 44);
+    color: #fc403d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.fixed-button {
+    width: 100px;
+    height: 55px;
+    margin-right: 10px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.others-button {
+    width: 100px;
+    height: 55px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+
+.transactions-second{
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    pointer-events: none;
+    transform: scale(0.95);
+    z-index: 1000;
+}
+
+.transactions-second{
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.transactions-second-container{
+    display: flex;
+}
+
+.investment-buy{
+    width: 100px;
+    height: 55px;
+    margin-right: 10px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.investment-sell{
+    width: 100px;
+    height: 55px;
+    margin-right: 10px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+
+
+
+
 
 /* Elements */
 /* Necessity-element */

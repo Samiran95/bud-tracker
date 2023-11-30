@@ -1,22 +1,37 @@
+gsap.from("body",{
+    scale : 0.95,
+    duration: 0.3,
+    opacity : 0,
+})
+
 // Transaction option
 function transaction() {
 
     gsap.to(".transaction-word", {
         opacity: 1,
-        pointerEvents : "all",
+        pointerEvents: "all",
         duration: 0.8,
         ease: Back.easeOut.config(2.5),
-        scale : 1
+        scale: 1
     })
 
 
     gsap.to(".transactions", {
-        delay : 0.2,
+        delay: 0.2,
         opacity: 1,
-        pointerEvents : "all",
+        pointerEvents: "all",
         duration: 0.8,
         ease: Back.easeOut.config(2.5),
-        scale : 1
+        scale: 1
+    })
+
+    gsap.to(".close-container", {
+        delay: 0.4,
+        opacity: 1,
+        pointerEvents: "all",
+        duration: 0.8,
+        ease: Back.easeOut.config(2.5),
+        scale: 1
     })
 
     gsap.to(".upper-page", {
@@ -24,10 +39,45 @@ function transaction() {
         filter: "blur(50px)",
     })
 }
+
+
+function closeTransaction() {
+
+    gsap.to(".transaction-word", {
+        opacity: 0,
+        pointerEvents: "none",
+        duration: 0.8,
+        ease: Back.easeOut.config(2.5),
+        scale: 0.95
+    })
+
+
+    gsap.to(".transactions", {
+        opacity: 0,
+        pointerEvents: "none",
+        duration: 0.8,
+        ease: Back.easeOut.config(2.5),
+        scale: 0.95
+    })
+
+    gsap.to(".close-container", {
+        opacity: 0,
+        pointerEvents: "none",
+        duration: 0.8,
+        ease: Back.easeOut.config(2.5),
+        scale: 0.90
+    })
+
+    gsap.to(".upper-page", {
+        delay : 0.2,
+        duration: 0.4,
+        filter: "blur(0px)",
+    })
+}
 // Transaction option
 
 // Selection Category
-function selectionCategory(){
+function selectionCategory() {
     gsap.to(".selection-category", {
         duration: 0.7,
         y: "-82vh",
@@ -37,8 +87,22 @@ function selectionCategory(){
     gsap.to(".red-color", {
         duration: 0.7,
         opacity: 1,
-        pointerEvents : "all",
-        zIndex : 1
+        pointerEvents: "all",
+        zIndex: 1
+    })
+}
+//////////////////////////////////////////
+function closeSelectionCategory() {
+    gsap.to(".selection-category", {
+        duration: 0.7,
+        y: "0vh",
+        ease: Power1.easeOut
+    })
+
+    gsap.to(".red-color", {
+        duration: 0.7,
+        opacity: 0,
+        pointerEvents: "none",
     })
 }
 // Selection Category
@@ -47,7 +111,7 @@ function selectionCategory(){
 // Form
 // Income Form
 
-function incomeForm(){
+function incomeForm() {
     gsap.to(".income-form", {
         duration: 0.7,
         y: "-78vh",
@@ -57,15 +121,36 @@ function incomeForm(){
     gsap.to(".green-color", {
         duration: 0.7,
         opacity: 1,
-        pointerEvents : "all",
-        zIndex : 1
+        pointerEvents: "all",
+        zIndex: 1
     })
 
     gsap.to(".income-element", {
-        delay : 0.3,
+        delay: 0.1,
         duration: 1,
         y: "-98vh",
         ease: Power2.easeOut
+    })
+}
+////////////////////////////////////////////////
+function closeIncomeForm() {
+    gsap.to(".income-form", {
+        duration: 0.7,
+        y: "0vh",
+        ease: Power1.easeOut
+    })
+
+    gsap.to(".green-color", {
+        delay: 1,
+        duration: 0.7,
+        opacity: 0,
+        pointerEvents: "none",
+    })
+
+    gsap.to(".income-element", {
+        duration: 1,
+        y: "0vh",
+        ease: Power2.easeIn
     })
 }
 
@@ -73,9 +158,9 @@ function incomeForm(){
 
 // Necessity Form
 
-function necessityForm(){
+function necessityForm() {
     gsap.to(".necessity-expense-form", {
-        delay : 0.2,
+        delay: 0.2,
         duration: 0.7,
         y: "-78vh",
         ease: Power2.easeOut
@@ -83,21 +168,42 @@ function necessityForm(){
 
     gsap.to(".selection-category", {
         duration: 0.5,
-        scale : 0.95,
+        scale: 0.95,
     })
 
     gsap.to(".necessity-element", {
-        delay : 0.3,
+        delay: 0.3,
         duration: 1,
         y: "-98vh",
         ease: Power2.easeOut
     })
 
 }
+//////////////////////////////////
+function closeNecessityForm() {
+    gsap.to(".necessity-expense-form", {
+        duration: 0.7,
+        y: "0vh",
+        ease: Power1.easeOut
+    })
 
-function wantsForm(){
+    gsap.to(".selection-category", {
+        delay: 0.2,
+        duration: 0.5,
+        scale: 1,
+    })
+
+    gsap.to(".necessity-element", {
+        duration: 1,
+        y: "0vh",
+        ease: Power2.easeIn
+    })
+
+}
+
+function wantsForm() {
     gsap.to(".wants-expense-form", {
-        delay : 0.2,
+        delay: 0.2,
         duration: 0.7,
         y: "-78vh",
         ease: Power2.easeOut
@@ -105,21 +211,41 @@ function wantsForm(){
 
     gsap.to(".selection-category", {
         duration: 0.5,
-        scale : 0.95,
+        scale: 0.95,
     })
 
     gsap.to(".want-element", {
-        delay : 0.3,
+        delay: 0.3,
         duration: 1,
         y: "-98vh",
         ease: Power2.easeOut
     })
-    
+}
+///////////////////////////
+function closeWantsForm() {
+    gsap.to(".wants-expense-form", {
+        duration: 0.7,
+        y: "0vh",
+        ease: Power1.easeOut
+    })
+
+    gsap.to(".selection-category", {
+        delay: 0.2,
+        duration: 0.5,
+        scale: 1,
+    })
+
+    gsap.to(".want-element", {
+        duration: 1,
+        y: "0vh",
+        ease: Power2.easeIn
+    })
+
 }
 
-function othersForm(){
+function othersForm() {
     gsap.to(".others-expense-form", {
-        delay : 0.2,
+        delay: 0.2,
         duration: 0.7,
         y: "-78vh",
         ease: Power2.easeOut
@@ -127,14 +253,35 @@ function othersForm(){
 
     gsap.to(".selection-category", {
         duration: 0.5,
-        scale : 0.95,
+        scale: 0.95,
     })
 
     gsap.to(".other-element", {
-        delay : 0.3,
+        delay: 0.3,
         duration: 1,
         y: "-98vh",
         ease: Power2.easeOut
+    })
+}
+
+///////////////////////////
+function closeothersForm() {
+    gsap.to(".others-expense-form", {
+        duration: 0.7,
+        y: "0vh",
+        ease: Power1.easeOut
+    })
+
+    gsap.to(".selection-category", {
+        delay: 0.2,
+        duration: 0.5,
+        scale: 1,
+    })
+
+    gsap.to(".other-element", {
+        duration: 1,
+        y: "0vh",
+        ease: Power2.easeIn
     })
 
 }
