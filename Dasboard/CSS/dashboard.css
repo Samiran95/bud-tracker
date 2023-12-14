@@ -7,6 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .upper-section{
     display: flex;
     overflow-x: scroll;
@@ -682,3 +688,180 @@
 
 
 /*---------Right-section---------*/
+
+/*---------Lower-page---------*/
+.lower-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bigger-personal-details{
+    position: absolute;
+    top: 102vh;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(28deg, rgba(86,40,255,1) 0%, rgba(229,160,251,1) 100%);
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    box-shadow: 0px 10px 30px -15px rgba(0, 0, 0, 1);
+}
+
+.bigger-card-details{
+    position: absolute;
+    top: 102vh;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(28deg, rgba(40,145,255,1) 0%, rgba(202,251,160,1) 100%);
+    color:  white;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0px 10px 30px -15px rgba(0, 0, 0, 1);
+}
+
+/*----Universal Format in this Page----*/
+
+#input {
+    width: 70vw;
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 5);
+}
+
+.container-description {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container-close {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: rgb(71, 71, 71);
+}
+
+.below-containers-upper {
+    width: 100%;
+    height: 7vh;
+    /*fixed width*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-containers-middle {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.below-containers-lower {
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----Universal Format in this Page----*/
+
+/*----Personal Detail----*/
+
+.personal-password-form{
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-detail-form {
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    z-index: 3;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-submit-button {
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #70ff2e;
+    box-shadow: 0px 0px 10px 0px #70ff2e;
+    font-weight: 600;
+}
+
+/*----Personal Detail----*/
+
+/*----Card Detail----*/
+
+.card-password-form{
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-detail-form {
+    position: absolute;
+    top: 102vh;
+    width: 100%;
+    height: 45vh;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    z-index: 3;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-submit-button {
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #70ff2e;
+    box-shadow: 0px 0px 10px 0px #70ff2e;
+    font-weight: 600;
+}
+
+/*----Card Detail----*/
+
+
+/*---------Lower-page---------*/

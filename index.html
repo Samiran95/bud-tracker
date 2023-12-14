@@ -6,266 +6,328 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Dasboard/CSS/dashboard.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="Personal_Details/HTML/pddisplay.html">
     <script src="Common/JS/gsap.min.js" defer></script>
     <script src="Dasboard/JS/Animate/dasboardanimate.js" defer></script>
     <title>Dashboard</title>
 </head>
 
 <body>
-    <div class="upper-section">
-        <div class="left-section">
-            <div class="left-upper-section">
-                <div class="upper-left">Hello Samiran</div>
-                <div class="upper-right"></div>
+    <!------------Upper Page-------->
+    <div class="upper-page">
+        <div class="upper-section">
+            <div class="left-section">
+                <div class="left-upper-section">
+                    <div class="upper-left">Hello Samiran</div>
+                    <div class="upper-right"></div>
+                </div>
+                <div class="left-lower-section">
+                    <!-- Main Card -->
+                    <div class="main-card" onclick="location.href='Main/HTML/main.html';">
+                        <div class="main-card-upper">
+                            <div class="main-card-upper-upper">
+                                September Month
+                            </div>
+                            <div class="main-card-upper-lower">
+                                <div class="main-upper-lower-left">
+                                    <div class="upper-heading">Current Expenses</div>
+                                    <div class="main-upper-lower-left-content">&#8377 25000</div>
+                                </div>
+                                <div class="main-upper-lower-right">
+                                    <div class="upper-heading">Trends</div>
+                                    <div class="main-upper-lower-right-content"><i
+                                            class="fa-solid fa-arrow-trend-up"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-card-lower">
+                            <div class="main-card-lower-mini">
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Card -->
+                    <!-- Investment Card -->
+                    <div class="investment-card" onclick="location.href='Investment/HTML/investment.html';">
+                        <div class="investment-card-upper">
+                            <div class="investment-card-upper-upper">
+                                Investments
+                            </div>
+                            <div class="investment-card-upper-lower">
+                                <div class="investment-card-upper-lower-center">
+                                    <div class="upper-heading">Balance Available</div>
+                                    <div class="investment-card-upper-lower-content">&#8377 100000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="investment-card-lower">
+                            <div class="investment-card-lower-mini">
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+
+                                <div id="mini-cards" class="necessity-card">
+                                    <div class="card-heading">
+                                        Necessity
+                                    </div>
+                                    <div class="card-value">25000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Investment Card -->
+
+                    <!-- Lend Card -->
+                    <div class="lend-card">
+                        <div class="lend-card-upper">
+                            <div class="lend-card-upper-upper">
+                                Lended Money
+                            </div>
+                            <div class="lend-card-upper-lower">
+                                <div class="lend-card-upper-lower-center">
+                                    <div class="upper-heading">Balance Available</div>
+                                    <div class="lend-card-upper-lower-center-content">&#8377 100000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lend-card-lower">
+                            <div class="click-button">
+                                <div class="click-word">Click</div>
+                                <div class="click-sign">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lend Card -->
+
+                    <!-- Other Funds Card -->
+                    <div class="of-card">
+                        <div class="of-card-upper">
+                            <div class="of-card-upper-upper">
+                                Other Funds
+                            </div>
+                            <div class="of-card-upper-lower">
+                                <div class="of-card-upper-lower-center">
+                                    <div class="upper-heading">Balance Available</div>
+                                    <div class="of-card-upper-lower-center-content">&#8377 20000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="of-card-lower">
+                            <div class="click-button">
+                                <div class="click-word">Click</div>
+                                <div class="click-sign">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lend Card -->
+
+                    <div class="credit-card">Credit-card</div>
+                    <div class="loan-card">Loan-card</div>
+                    <div class="otherfund-card">Other Fund</div>
+                </div>
             </div>
-            <div class="left-lower-section">
-                <!-- Main Card -->
-                <div class="main-card" onclick="location.href='Main/HTML/main.html';">
-                    <div class="main-card-upper">
-                        <div class="main-card-upper-upper">
-                            September Month
-                        </div>
-                        <div class="main-card-upper-lower">
-                            <div class="main-upper-lower-left">
-                                <div class="upper-heading">Current Expenses</div>
-                                <div class="main-upper-lower-left-content">&#8377 25000</div>
-                            </div>
-                            <div class="main-upper-lower-right">
-                                <div class="upper-heading">Trends</div>
-                                <div class="main-upper-lower-right-content"><i class="fa-solid fa-arrow-trend-up"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-card-lower">
-                        <div class="main-card-lower-mini">
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="right-section">
+                <div class="right-section-upper">
+                    Other Selections!
                 </div>
-                <!-- Main Card -->
-                <!-- Investment Card -->
-                <div class="investment-card" onclick="location.href='Investment/HTML/investment.html';">
-                    <div class="investment-card-upper">
-                        <div class="investment-card-upper-upper">
-                            Investments
+                <div class="right-section-lower">
+                    <div class="card-section">
+                        <div class="personal-details" onclick="personalDetailForm()">
+                            <div class="personal-details-upper">Personal</div>
+                            <div class="personal-details-lower">Details</div>
                         </div>
-                        <div class="investment-card-upper-lower">
-                            <div class="investment-card-upper-lower-center">
-                                <div class="upper-heading">Balance Available</div>
-                                <div class="investment-card-upper-lower-content">&#8377 100000</div>
-                            </div>
+                        <div class="card-details" onclick="cardDetailForm()">
+                            <div class="card-details-upper">Card</div>
+                            <div class="card-details-lower">Details</div>
                         </div>
                     </div>
-                    <div class="investment-card-lower">
-                        <div class="investment-card-lower-mini">
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
+                    <div class="shortcut-section">
+                        <div class="shortcut-container">
+                            <div class="shortcut-heading">Shortcuts</div>
+                            <div class="shortcut-container-upper">
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                    <div class="shortcut-description">Trend</div>
                                 </div>
-                                <div class="card-value">25000</div>
-                            </div>
 
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                                    <div class="shortcut-description">Analytics</div>
                                 </div>
-                                <div class="card-value">25000</div>
-                            </div>
 
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                    <div class="shortcut-description">History</div>
                                 </div>
-                                <div class="card-value">25000</div>
                             </div>
+                            <div class="shortcut-container-lower">
 
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-gear"></i></div>
+                                    <div class="shortcut-description">Settings</div>
                                 </div>
-                                <div class="card-value">25000</div>
-                            </div>
 
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
+
+                                <div class="shortcut-main">
+                                    <div class="shortcut-icon"><i class="fa-solid fa-newspaper"></i></div>
+                                    <div class="shortcut-description">News</div>
                                 </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-
-                            <div id="mini-cards" class="necessity-card">
-                                <div class="card-heading">
-                                    Necessity
-                                </div>
-                                <div class="card-value">25000</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Investment Card -->
-
-                <!-- Lend Card -->
-                <div class="lend-card">
-                    <div class="lend-card-upper">
-                        <div class="lend-card-upper-upper">
-                            Lended Money
-                        </div>
-                        <div class="lend-card-upper-lower">
-                            <div class="lend-card-upper-lower-center">
-                                <div class="upper-heading">Balance Available</div>
-                                <div class="lend-card-upper-lower-center-content">&#8377 100000</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lend-card-lower">
-                        <div class="click-button">
-                            <div class="click-word">Click</div>
-                            <div class="click-sign">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Lend Card -->
-
-                <!-- Other Funds Card -->
-                <div class="of-card">
-                    <div class="of-card-upper">
-                        <div class="of-card-upper-upper">
-                            Other Funds
-                        </div>
-                        <div class="of-card-upper-lower">
-                            <div class="of-card-upper-lower-center">
-                                <div class="upper-heading">Balance Available</div>
-                                <div class="of-card-upper-lower-center-content">&#8377 20000</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="of-card-lower">
-                        <div class="click-button">
-                            <div class="click-word">Click</div>
-                            <div class="click-sign">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Lend Card -->
-
-                <div class="credit-card">Credit-card</div>
-                <div class="loan-card">Loan-card</div>
-                <div class="otherfund-card">Other Fund</div>
-            </div>
-        </div>
-        <div class="right-section">
-            <div class="right-section-upper">
-                Other Selections!
-            </div>
-            <div class="right-section-lower">
-                <div class="card-section">
-                    <div class="personal-details">
-                        <div class="personal-details-upper">Personal</div>
-                        <div class="personal-details-lower">Details</div>
-                    </div>
-                    <div class="card-details">
-                        <div class="card-details-upper">Card</div>
-                        <div class="card-details-lower">Details</div>
-                    </div>
-                </div>
-                <div class="shortcut-section">
-                    <div class="shortcut-container">
-                        <div class="shortcut-heading">Shortcuts</div>
-                        <div class="shortcut-container-upper">
-                            <div class="shortcut-main">
-                                <div class="shortcut-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
-                                <div class="shortcut-description">Trend</div>
-                            </div>
-
-                            <div class="shortcut-main">
-                                <div class="shortcut-icon"><i class="fa-solid fa-chart-pie"></i></div>
-                                <div class="shortcut-description">Analytics</div>
-                            </div>
-
-                            <div class="shortcut-main">
-                                <div class="shortcut-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                                <div class="shortcut-description">History</div>
-                            </div>
-                        </div>
-                        <div class="shortcut-container-lower">
-
-                            <div class="shortcut-main">
-                                <div class="shortcut-icon"><i class="fa-solid fa-gear"></i></div>
-                                <div class="shortcut-description">Settings</div>
-                            </div>
 
 
-                            <div class="shortcut-main">
-                                <div class="shortcut-icon"><i class="fa-solid fa-newspaper"></i></div>
-                                <div class="shortcut-description">News</div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!------------Upper Page-------->
+
+    <!------------Lower Page-------->
+    <!------------Elements-------->
+    <div class="lower-page">
+        <div class="bigger-personal-details">
+            <div class="personal-details-upper">Personal</div>
+            <div class="personal-details-lower">Details</div>
+        </div>
+
+
+        <div class="bigger-card-details">
+            <div class="card-details-upper">Card</div>
+            <div class="card-details-lower">Details</div>
+        </div>
+
+    </div>
+
+
+    <!------------Elements-------->
+    <!------------Forms-------->
+    <!------------Personal-detail-form-------->
+    <div class="personal-detail-form">
+        <div class="below-containers-upper">
+            <div class="container-description">Enter Your Password</div>
+            <div class="container-close" onclick="closePersonalDetailForm()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="below-containers-middle">
+            <form class="personal-password-form">
+                <input id="input" type="password" placeholder="Password">
+            </form>
+        </div>
+        <div class="below-containers-lower">
+            <div class="personal-submit-button" onclick="location.href='Personal_Details/HTML/pddisplay.html';">Submit</div>
+        </div>
+    </div>
+
+    <div class="card-detail-form">
+        <div class="below-containers-upper">
+            <div class="container-description">Enter Your Password</div>
+            <div class="container-close" onclick="closeCardDetailForm()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="below-containers-middle">
+            <form class="card-password-form">
+                <input id="input" type="password" placeholder="Password">
+            </form>
+        </div>
+        <div class="below-containers-lower">
+            <div class="card-submit-button">Submit</div>
+        </div>
+    </div>
+
+
+    <!------------Personal-detail-form-------->
+    <!------------Forms-------->
+    <!------------Lower Page-------->
 
 </body>
 
