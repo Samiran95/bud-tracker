@@ -94,4 +94,80 @@ function closeCardDetailForm() {
     })
 }
 
+
 // Card Form
+
+// Trends Pop up
+
+function trendOpen() {
+
+    gsap.to("#trend-page", {
+        duration: 0.4,
+        opacity: 1  ,
+        pointerEvents: "all"
+    })
+
+    gsap.to(".links", {
+        ease: "back.out(1.7)",
+        duration: 0.8,
+        scale : 1,
+        opacity: 1,
+        stagger : 0.05
+    })
+
+
+}
+
+function trendClose() {
+
+    gsap.to("#trend-page", {
+        duration: 0.4,
+        opacity: 0 ,
+        pointerEvents: "none"
+    })
+
+    gsap.to(".links", {
+        duration: 0.8,
+        scale : 0.80,
+        opacity: 0,
+    })
+}
+
+
+// Trends Pop up
+
+function analyticsOpen() {
+
+    gsap.to("#analytics-page", {
+        duration: 0.4,
+        opacity: 1  ,
+        pointerEvents: "all"
+    })
+
+    gsap.to(".links1", {
+        ease: "back.out(1.7)",
+        duration: 0.8,
+        scale : 1,
+        opacity: 1,
+        stagger : 0.05
+    })
+}
+
+function analyticsClose() {
+
+    gsap.to("#analytics-page", {
+        duration: 0.4,
+        opacity: 0 ,
+        pointerEvents: "none"
+    })
+
+    gsap.to(".links1", {
+        duration: 0.8,
+        scale : 0.80,
+        opacity: 0,
+    })
+}
+
+
+// Trends Pop up
+

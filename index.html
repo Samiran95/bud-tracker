@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Dasboard/CSS/dashboard.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="Personal_Details/HTML/pddisplay.html">
+    <link rel="stylesheet" href="Saved_Cards/HTML/savedcardsdisplay.html">
     <script src="Common/JS/gsap.min.js" defer></script>
     <script src="Dasboard/JS/Animate/dasboardanimate.js" defer></script>
     <title>Dashboard</title>
@@ -235,12 +235,12 @@
                         <div class="shortcut-container">
                             <div class="shortcut-heading">Shortcuts</div>
                             <div class="shortcut-container-upper">
-                                <div class="shortcut-main">
+                                <div class="shortcut-main" onclick="trendOpen()">
                                     <div class="shortcut-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
                                     <div class="shortcut-description">Trend</div>
                                 </div>
 
-                                <div class="shortcut-main">
+                                <div class="shortcut-main" onclick="analyticsOpen()">
                                     <div class="shortcut-icon"><i class="fa-solid fa-chart-pie"></i></div>
                                     <div class="shortcut-description">Analytics</div>
                                 </div>
@@ -320,9 +320,89 @@
             </form>
         </div>
         <div class="below-containers-lower">
-            <div class="card-submit-button">Submit</div>
+            <div class="card-submit-button" onclick="location.href='Saved_Cards/HTML/savedcardsdisplay.html';" >Submit</div>
         </div>
     </div>
+
+    <!------------Trends -------->
+
+    <div id="trend-page" class="background">
+        <div class="second-upper">
+            <div class="second-upper-title">Trends</div>
+            <div class="second-upper-action" onclick="trendClose()"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="second-content">
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+            <div class="content-arrangement">
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+                <div class="links">hello</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!------------Trends -------->
+
+
+        <!------------Analytics -------->
+
+        <div id="analytics-page" class="background">
+            <div class="second-upper">
+                <div class="second-upper-title">Analytics</div>
+                <div class="second-upper-action" onclick="analyticsClose()"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="second-content">
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">Samruddhi</div>
+                    <div class="links1">hello</div>
+                </div>
+                <div class="content-arrangement">
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                    <div class="links1">hello</div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!------------Analytics-------->
+
 
 
     <!------------Personal-detail-form-------->
