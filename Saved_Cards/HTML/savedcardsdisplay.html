@@ -21,8 +21,8 @@
         <div class="middle">
             <p class="saved-cards-word">Saved Cards</p>
             <div class="action-buttons">
-                <button type="button" class="add" onclick="personalForm()"><i class="fa-solid fa-plus"></i></button>
-                <button type="button" class="delete" onclick="personalForm()"><i class="fa-solid fa-trash"></i></button>
+                <button type="button" class="add" onclick="saveCardForm()"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" class="delete"><i class="fa-solid fa-trash"></i></button>
             </div>
         </div>
         <div class="lower">
@@ -153,10 +153,10 @@
         <div class="cards-form">
             <div class="below-containers-upper">
                 <div class="container-description">Add Cards</div>
-                <div class="container-close" onclick="closeIncomeForm()"><i class="fa-solid fa-xmark"></i></div>
+                <div class="container-close" onclick="closeSaveCardForm()"><i class="fa-solid fa-xmark"></i></div>
             </div>
             <div class="below-containers-middle">
-                <form class="other-form">
+                <form class="savecard-form">
                     <input id="input" type="date">
                     <input id="input" type="text">
                     <input id="input" type="text">
@@ -170,12 +170,15 @@
                 </form>
             </div>
             <div class="below-containers-lower">
-                <div class="income-submit-button">Submit</div>
-                <div class="income-history-button">History</div>
+                <div class="submit-button">Submit</div>
             </div>
         </div>
 
         <!------------Form--------------->
+
+                <!--- Elements--->
+                <div class="savecard-word">Add Cards Form</div>
+                <!--- Elements--->
 
     </div>
 
